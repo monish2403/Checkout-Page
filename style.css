@@ -1,6 +1,57 @@
+
+:root{
+    --font-heading: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-heading-size: 24px;
+    --font-heading-weight: 700;
+    --font-body-size: 16px;
+    --font-body-weight: 400;
+    --btn-color: #1D1D1F;
+    --card-left: #D2D5DA;
+    --input: #E5E7EB;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background: var(--input);
+}
+
+.container{
+    background: url('./resources/background-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 200px;
+    position: relative;
+}
+
+.bg-container{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 500px;
+}
+
+.bg-container h1{
+    font-size: var(--font-heading-size);
+    font-weight: var(--font-heading-weight);
+    letter-spacing: 2px;
+}
+
+.bg-container p{
+    font-size: 10px;
+    font-weight: var(--font-heading-weight);
+    background-color: #1D1D1F;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
